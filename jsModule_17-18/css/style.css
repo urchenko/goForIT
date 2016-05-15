@@ -1,0 +1,239 @@
+body {
+  background: #ddd;
+}
+.wrap{
+  max-width: 748px;
+  position: relative;
+  border: 10px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
+}
+/*-----jCarousel-----*/
+.wrap_jcarousel{
+  margin: 10px auto;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+}
+.jcarousel img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.jcarousel-prev {
+  left: 15px;
+}
+.jcarousel-next {
+  right: 15px;
+}
+.jcarousel-prev,
+.jcarousel-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 4px #F0EFE7;
+    -moz-box-shadow: 0 0 4px #F0EFE7;
+    box-shadow: 0 0 4px #F0EFE7;
+}
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin: 0;
+  margin-left: -22px;
+}
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 10px;
+  text-indent: -9999px;
+  margin-right: 7px;
+  -webkit-box-shadow: 0 0 2px #4E443C;
+  -moz-box-shadow: 0 0 2px #4E443C;
+  box-shadow: 0 0 2px #4E443C;
+}
+.jcarousel-pagination a.active {
+  background: #4E443C;
+  color: #fff;
+  opacity: 1;
+  -webkit-box-shadow: 0 0 2px #F0EFE7;
+  -moz-box-shadow: 0 0 2px #F0EFE7;
+  box-shadow: 0 0 2px #F0EFE7;
+}
+/*------Select-------*/
+.wrap_select {
+  margin: 30px auto;
+}
+.sbHolder,
+.sbOptions { 
+  width: 100%;
+}
+/*-----Checkbox-----*/
+.wrap_checkBox {
+  margin: 30px auto 5px;
+  overflow: hidden;
+}
+.checkbox {
+  float: left;
+  margin: 15px;
+}
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox.png);
+  overflow: hidden;
+}
+.niceChecked {
+  background-position: 0 -17px;
+}
+.niceCheck input {
+  margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+.niceCheckDisabled {
+  background-image: url(../img/checkbox-disabled.png);
+}
+.chkLabl {
+  margin-right: 15px;
+}
+/*-----css checkbox--------*/
+.cssCheckbox {
+  float: right;
+  position: relative;
+  margin: 15px;
+}
+#css-check1,
+#css-check2,
+#css-check3 {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.cssBoxLabel {
+  cursor: pointer;
+}
+.cssBoxLabel:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox-2.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+.cssBoxInput:checked + .cssBoxLabel:after {
+background-position: 0 -17px;
+}
+.cssBoxLabel:hover:after {
+background-position: 0 -34px;
+}
+.cssBoxInput:checked + .cssBoxLabel:hover:after {
+background-position: 0 -51px;
+}
+/*----dropdown menu jQuery----*/
+.wrap_jQmenu {
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+nav {
+  background-color: rgb(255,100,100);
+}
+.menu {}
+.menu__item {
+  display: inline-block;
+  position: relative;
+}
+.menu__link {
+}
+/* sub navigation */
+.submenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  background-color: rgb(255,100,100);
+}
+.dropdown li {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+.submenu ul {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  margin: 0;
+}
+/* style all links */
+.menu__link {
+  display: block;
+  margin: 0 12px;
+  padding: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+}
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+  border-color: rgb(50,50,50);
+  color: rgb(50,50,50);
+}
+/* style sub level links */
+.submenu a {
+  border-bottom: solid 1px rgb(200,50,50);
+  margin: 0 10px;
+  padding: 0;
+}
+.menu__item:last-child a {
+  border-bottom: none;
+}
+/* show arrows for dropdowns */
+.dropdown > a {
+  background-image: url('../img/arrow-down.png');
+  background-position: right 20px;
+  background-repeat: no-repeat;
+}
+.submenu li.dropdown > a {
+  background-image: url('../img/arrow-right.png');
+  background-position: right 16px;
+  background-repeat: no-repeat;
+}
+/* hide sub menu links */
+.submenu {
+  display: none;
+}
